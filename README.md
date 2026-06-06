@@ -1,10 +1,10 @@
-# 🧠 AI Data Analyst
+#  AI Data Analyst
 
 A natural language to SQL system that reads CSV/Excel files with multiple tables, embeds schema metadata using Azure OpenAI, stores embeddings in Qdrant (persistent local), and answers user questions by generating + executing SQL queries.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 User Question (NL)
@@ -23,7 +23,7 @@ User Question (NL)
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ai-analyst/
@@ -67,7 +67,7 @@ ai-analyst/
 
 ---
 
-## 🚀 Setup
+##  Setup
 
 ### 1. Backend
 
@@ -106,7 +106,7 @@ npm run dev  # Runs on http://localhost:5173
 
 ---
 
-## 📊 CSV Format
+##  CSV Format
 
 Your CSV file should have a column named `__table__` (or use sheet names in Excel) to distinguish between tables.
 
@@ -120,18 +120,3 @@ sales,2,Product B,300,...
 
 __table__,id,customer_name,...
 customers,1,John Doe,...
-```
-
----
-
-## 🔑 Environment Variables
-
-```
-AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
-AZURE_OPENAI_API_KEY=your-key
-AZURE_OPENAI_API_VERSION=2024-02-01
-AZURE_GPT_DEPLOYMENT=gpt-4.1
-AZURE_EMBEDDING_DEPLOYMENT=text-embedding-ada-002
-QDRANT_PATH=./qdrant_storage
-QDRANT_COLLECTION=schema_embeddings
-```

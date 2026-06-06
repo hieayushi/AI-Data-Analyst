@@ -1,0 +1,34 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Data and Cache
+backend/data/cache.json
+backend/data/*.csv
+backend/data/*.xlsx
+backend/data/schema.json
+backend/qdrant_storage/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+build/
+.npm/
+
+# OS/Misc
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
